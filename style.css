@@ -52,7 +52,6 @@ body {
 /* --- MAIN INTERACTIVE GAMEBOARD --- */
 .container { width: 100%; max-width: 430px; z-index: 10; display: none; }
 
-/* HUD Header Dashboard Layouts */
 .hud-bar {
     display: flex; justify-content: space-between; align-items: center;
     width: 100%; margin-bottom: 15px; background: rgba(0, 0, 0, 0.4);
@@ -63,7 +62,6 @@ body {
 @keyframes pulse { 0%, 100% { transform: scale(0.9); opacity: 0.6; } 50% { transform: scale(1.1); opacity: 1; } }
 .hud-level-tag { background: var(--game-neon); color: white; padding: 4px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 700; }
 
-/* Profile Layout Status Elements */
 .profile-card {
     background: var(--card-bg); border: 2px solid var(--card-border);
     border-radius: 24px; padding: 15px 20px; margin-bottom: 15px;
@@ -76,11 +74,9 @@ body {
 .stat-bar-container { width: 100%; background: #1e293b; height: 6px; border-radius: 3px; margin-top: 5px; overflow: hidden; }
 .stat-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #a855f7, #ec4899); transition: width 0.3s; }
 
-/* Arcade countdown loading lines bar */
 #timer-container { width: 100%; background: rgba(0,0,0,0.5); height: 6px; border-radius: 3px; margin-bottom: 15px; overflow: hidden; display: none; border: 1px solid rgba(255,255,255,0.05); }
 #timer-fill { height: 100%; width: 100%; background: var(--game-red); }
 
-/* Categories selections bar nodes matrix */
 .category-matrix { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 15px; }
 .cat-btn {
     background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border);
@@ -90,7 +86,6 @@ body {
 .cat-btn.active { opacity: 1; background: rgba(168, 85, 247, 0.15); border-color: var(--game-neon); }
 .cat-btn.active span { color: white; }
 
-/* Main Question Layout Panel Widget */
 .widget {
     background: var(--card-bg); border: 2px solid var(--card-border);
     border-radius: 24px; padding: 20px; margin-bottom: 15px; position: relative;
@@ -103,10 +98,9 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05); min-height: 110px;
     display: flex; flex-direction: column; justify-content: center;
 }
-.quote-box { color: #f8fafc; font-size: 1rem; font-weight: 700; line-height: 1.6; }
+.quote-box { color: #f8fafc; font-size: 1rem; font-weight: 700; line-height: 1.6; min-height: 50px; }
 .quote-box span.blank-space { color: #f59e0b; text-decoration: underline; font-weight: 800; }
 
-/* 4 Arcade Multiple Choice Options Buttons */
 .puzzle-options-box { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
 .puzzle-opt-btn {
     background: rgba(0, 0, 0, 0.4); border: 1px solid var(--card-border);
@@ -125,13 +119,24 @@ body {
     cursor: pointer; text-transform: uppercase; display: flex; justify-content: center; align-items: center; gap: 5px;
 }
 
+/* --- NEW: LEADERBOARD STYLING --- */
+.leaderboard-widget { max-height: 250px; overflow: hidden; }
+.leaderboard-list { display: flex; flex-direction: column; gap: 8px; margin-top: 5px; }
+.lb-row {
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(0, 0, 0, 0.3); padding: 10px 15px; border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.03); font-size: 0.8rem; font-weight: 600;
+}
+.lb-rank-name { display: flex; gap: 10px; align-items: center; }
+.lb-rank { color: var(--game-neon); font-weight: bold; width: 20px; }
+.lb-badge { background: rgba(168, 85, 247, 0.15); color: var(--game-neon); padding: 2px 8px; border-radius: 6px; font-size: 0.7rem; font-weight: 700; }
+
 .ping-btn {
     width: 100%; background: linear-gradient(90deg, #a855f7, #ec4899); border: none;
     padding: 16px; border-radius: 16px; color: white; font-weight: 700; font-size: 0.9rem;
-    cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px;
+    cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 10px;
 }
 
-/* Level Up overlay graphics splash modules */
 .level-up-splash {
     position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0.5);
     background: rgba(0, 0, 0, 0.95); border: 3px solid var(--game-green); padding: 25px 45px;
