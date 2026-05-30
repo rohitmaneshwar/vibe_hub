@@ -8,11 +8,11 @@ const localPuzzles = {
         { cat: "Nature", q: "हमारे सौरमंडल का सबसे बड़ा ग्रह ______ है और सबसे छोटा ग्रह ______ है।", opts: ["बृहस्पति / बुध", "शनि / मंगल", "पृथ्वी / शुक्र", "बृहस्पति / प्लूटो"], a: "बृहस्पति / बुध" }
     ],
     2: [
-        { cat: "Sports", q: "ओलंपिक छल्लों (Rings) में ______ रंग होते हैं और फुटबॉल वर्ल्ड कप हर ______ साल में होता है।", opts: ["5 / 4", "6 / 4", "5 / 3", "7 / 2"], a: "5 / 4" },
+        { cat: "Sports", q: "ओलंपिक छल्लों (Rings) में ______ रंग होते हैं... और फुटबॉल वर्ल्ड कप हर ______ साल में होता है।", opts: ["5 / 4", "6 / 4", "5 / 3", "7 / 2"], a: "5 / 4" },
         { cat: "English", q: "Identify the vowel combo: 'B__autif__l' requires ______ and ______ to complete.", opts: ["e / u", "a / i", "e / i", "o / u"], a: "e / u" },
         { cat: "GK", q: "विश्व का सबसे बड़ा महासागर ______ है और सबसे बड़ा रेगिस्तान ______ है।", opts: ["प्रशांत / सहारा", "हिन्द / थार", "अटलांटिक / गोबी", "प्रशांत / गोबी"], a: "प्रशांत / सहारा" },
         { cat: "Reasoning", q: "Complete the pattern: 2, 4, 8, 16, ______ and 3, 6, 12, 24, ______.", opts: ["32 / 48", "24 / 36", "32 / 36", "64 / 48"], a: "32 / 48" },
-        { cat: "Nature", q: "पेड़ की पत्तियां ______ के कारण हरी होती हैं और वे ______ गैस छोड़ती हैं।", opts: ["क्लोरोफिल / ऑक्सीजन", "नाइट्रोजन / कार्बन", "क्लोरोफिल / नाइट्रोजन", "पानी / ऑक्सीजन"], a: "क्लोरोफिल / ऑक्सीजन" }
+        { cat: "Nature", q: "पेड़ की पत्तियां ______ के कारण हरी होती हैं... और वे ______ गैस छोड़ती हैं।", opts: ["क्लोरोफिल / ऑक्सीजन", "नाइट्रोजन / कार्बन", "क्लोरोफिल / नाइट्रोजन", "पानी / ऑक्सीजन"], a: "क्लोरोफिल / ऑक्सीजन" }
     ],
     3: [
         { cat: "Sports", q: "हॉकी के जादूगर ______ को कहा जाता है और मिल्खा सिंह को ______ सिंह कहते हैं।", opts: ["मेजर ध्यानचंद / फ्लाइंग", "सचिन / सुल्तान", "ध्यानचंद / किंग", "नेहरू / आयरन"], a: "मेजर ध्यानचंद / फ्लाइंग" },
@@ -22,28 +22,28 @@ const localPuzzles = {
         { cat: "Nature", q: "शुद्ध पानी का रासायनिक सूत्र ______ है और साधारण नमक का ______ है।", opts: ["H2O / NaCl", "CO2 / HCl", "H2O / NaOH", "O2 / KOH"], a: "H2O / NaCl" }
     ],
     4: [
-        { cat: "Sports", q: "आईपीएल (IPL) की शुरुआत ______ में हुई थी trends और पहला सीजन ______ ने जीता था।", opts: ["2008 / राजस्थान रॉयल्स", "2007 / मुंबई इंडियंस", "2009 / चेन्नई सुपर किंग्स", "2008 / डेक्कन चार्जर्स"], a: "2008 / राजस्थान रॉयल्स" },
+        { cat: "Sports", q: "आईपीएल (IPL) की शुरुआत ______ में हुई थी और पहला सीजन ______ ने जीता था।", opts: ["2008 / राजस्थान रॉयल्स", "2007 / मुंबई端न्स", "2009 / चेन्नई सुपर किंग्स", "2008 / डेक्कन चार्जर्स"], a: "2008 / राजस्थान रॉयल्स" },
         { cat: "English", q: "Past form of 'Eat' is ______ and its third form is ______.", opts: ["ate / eaten", "eated / eaten", "ate / eated", "eating / eats"], a: "ate / eaten" },
         { cat: "GK", q: "भारत के प्रथम प्रधानमंत्री ______ थे और प्रथम राष्ट्रपति ______ थे।", opts: ["जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद", "महात्मा गांधी / जवाहरलाल नेहरू", "सरदार पटेल / डॉ. कलाम", "शास्त्री / डॉ. राजेंद्र प्रसाद"], a: "जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद" },
         { cat: "Reasoning", q: "यदि पैर का संबंध ______ से है, तो हाथ का संबंध ______ से होगा।", opts: ["जूते / दस्ताने", "मोज़े / घड़ी", "चप्पल / अंगूठी", "रास्ते / काम"], a: "जूते / दस्ताने" },
-        { cat: "Nature", q: "ताजमहल ______ नदी के किनारे है और दिल्ली का लाल किला ______ के किनारे है।", opts: ["यमुना / यमुना", "गंगा / यमुना", "नर्मदा / ताप्ती", "यमुना / गंगा"], a: "यमुना / यमुना" }
+        { cat: "Nature", q: "ताजमहल ______ नदी के किनारे है और दिल्ली का लाल किला ______ के किनारे है।", opts: ["यमुना / यमुना", "गंगा / यमुना", "नर्मदा / ताप्ती", "यमुना / गंगा"], a: "यमुना /  यमुना" }
     ],
     5: [
         { cat: "Sports", q: "मैराथन दौड़ की कुल दूरी लगभग ______ किमी होती है और हाफ मैराथन ______ किमी।", opts: ["42 / 21", "50 / 25", "42 / 10", "30 / 15"], a: "42 / 21" },
         { cat: "English", q: "Form of 'Write': second form is ______ and third form is ______.", opts: ["wrote / written", "written / wrote", "write / wrote", "writing / writes"], a: "wrote / written" },
         { cat: "GK", q: "भारत की 'पिंक सिटी' ______ को कहा जाता है और 'झीलों की नगरी' ______ है।", opts: ["जयपुर / उदयपुर", "जोधपुर / जयपुर", "जयपुर / भोपाल", "इंदौर / उदयपुर"], a: "जयपुर / उदयपुर" },
-        { cat: "Reasoning", q: "यदि कार का संबंध ______ से है, तो हवाई जहाज का संबंध ______ से है।", opts: ["रोड / आसमान", "पेट्रोल / पायलट", "पहिए / पंख", "ड्राइवर / run"], a: "रोड / आसमान" },
-        { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है और चंद्र ग्रहण ______ के दिन।", opts: ["अमावस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "रविवार / सोमवार", "अमावस्या / अमावस्या"], a: "अmawasya / पूर्णिमा", a: "अमावस्या / पूर्णिमा" }
+        { cat: "Reasoning", q: "यदि कार का संबंध ______ से है, तो हवाई जहाज का संबंध ______ से है।", opts: ["रोड / आसमान", "पेट्रोल / पायलट", "पहिए / पंख", "ड्राइवर / रनवे"], a: "रोड / आसमान" },
+        { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है... और चंद्र ग्रहण ______ के दिन।", opts: ["अमावस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "रविवार / सोमवार", "अमावस्या / अमावस्या"], a: "अमावस्या / पूर्णिमा" }
     ],
     6: [
         { cat: "Sports", q: "शतरंज (Chess) बोर्ड में कुल ______ खाने होते हैं और इसमें ______ खिलाड़ी खेलते हैं।", opts: ["64 / 2", "60 / 2", "64 / 4", "32 / 2"], a: "64 / 2" },
         { cat: "English", q: "Antonym of 'Dark' is ______ and synonym of 'Big' is ______.", opts: ["Light / Huge", "Black / Small", "Bright / Short", "White / Tiny"], a: "Light / Huge" },
         { cat: "GK", q: "भारत का राष्ट्रीय खेल ______ माना जाता है और राष्ट्रीय पक्षी ______ है।", opts: ["हॉकी / मोर", "क्रिकेट / तोता", "फुटबॉल / बाज", "हॉकी / कबूतर"], a: "हॉकी / मोर" },
         { cat: "Reasoning", q: "यदि अस्पताल का संबंध ______ से है, तो स्कूल का संबंध ______ से है।", opts: ["डॉक्टर / शिक्षक", "मरीज / छात्र", "दवाई / किताब", "सफेद / ब्लैकबोर्ड"], a: "डॉक्टर / शिक्षक" },
-        { cat: "Nature", q: "पृथ्वी पर सबसे तेज़ दौड़ने वाला जानवर ______ है और सबसे बड़ा जीव ______ है।", opts: ["चीता / ब्लू व्हेल", "शेर / हाथी", "चीता / जिराफ़", "घोड़ा / ब्लू व्हेल"], a: "चीता / ब्लू व्हेल" }
+        { cat: "Nature", q: "पृथ्वी पर सबसे तेज़ दौड़ने वाला जानवर ______ है और सबसे बड़ा जीव ______ है।", opts: ["चीता /  ब्लू व्हेल", "शेर / हाथी", "चीता / जिराफ़", "घोड़ा /  ब्लू व्हेल"], a: "चीता /  ब्लू व्हेल" }
     ],
     7: [
-        { cat: "Sports", q: "सानिया मिर्जा ______ खेल से जुड़ी हैं और साइना नेहवाल ______ से।", opts: ["टेनिस / बैडमिंटन", "बैडमिंटन / टेनिस", "टेनिस / क्रिकेट", "कुश्ती / बैडमिंटन"], a: "टेनिस / बैडमिंटन" },
+        { cat: "Sports", q: "सानिया मिर्जा ______ खेल से जुड़ी हैं... और साइना नेहवाल ______ से।", opts: ["टेनिस / बैडमिंटन", "बैडमिंटन / टेनिस", "टेनिस / क्रिकेट", "कुश्ती / बैडमिंटन"], a: "टेनिस / बैडमिंटन" },
         { cat: "English", q: "Synonym of 'Rich' is ______ and its antonym is ______.", opts: ["Wealthy / Poor", "Poor / Wealthy", "Money / Hard", "Happy / Sad"], a: "Wealthy / Poor" },
         { cat: "GK", q: "कागज़ का आविष्कार सबसे पहले ______ में हुआ और शून्य (0) का आविष्कार ______ में हुआ।", opts: ["चीन / भारत", "भारत / चीन", "अमेरिका / भारत", "मिस्र / यूनान"], a: "चीन / भारत" },
         { cat: "Reasoning", q: "गणित में 5 का वर्ग (Square) ______ है और 10 का वर्ग ______ होता है।", opts: ["25 / 100", "20 / 40", "25 / 50", "15 / 100"], a: "25 / 100" },
@@ -53,22 +53,22 @@ const localPuzzles = {
         { cat: "Sports", q: "नीरज चोपड़ा ______ खेल से जुड़े हैं और अभिनव बिंद्रा ______ से।", opts: ["भाला फेंक / शूटिंग", "शूटिंग / भाला फेंक", "दौड़ / कुश्ती", "भाला फेंक / बॉक्सिंग"], a: "भाला फेंक / शूटिंग" },
         { cat: "English", q: "Plural of 'Box' is ______ and plural of 'Ox' is ______.", opts: ["Boxes / Oxen", "Boxs / Oxes", "Boxes / Oxes", "Boxed / Oxen"], a: "Boxes / Oxen" },
         { cat: "GK", q: "कंप्यूटर का जनक ______ को कहा जाता है और दिमाग ______ को कहते हैं।", opts: ["चार्ल्स बैबेज / CPU", "न्यूटन / RAM", "पास्कल / हार्डडिस्क", "एडिसन / CPU"], a: "चार्ल्स बैबेज / CPU" },
-        { cat: "Reasoning", q: "जनवरी के ठीक बाद ______ आता है Aur अक्टूबर के ठीक पहले ______ आता है।", opts: ["फरवरी / सितंबर", "मार्च / नवंबर", "फरवरी / अगस्त", "दिसंबर / नवंबर"], a: "फरवरी / सितंबर" },
+        { cat: "Reasoning", q: "जनवरी के ठीक बाद ______ आता है और अक्टूबर के ठीक पहले ______ आता है।", opts: ["फरवरी / सितंबर", "मार्च / नवंबर", "फरवरी / अगस्त", "दिसंबर / नवंबर"], a: "फरवरी / सितंबर" },
         { cat: "Nature", q: "दुनिया का सबसे बड़ा फूल ______ है और सबसे छोटा पौधा ______ श्रेणी का है।", opts: ["रेफ्लेसिया / वोल्फिया", "गुलाब / कैक्टस", "कमल / काई", "सूरजमुखी / तुलसी"], a: "रेफ्लेसिया / वोल्फिया" }
     ],
     9: [
         { cat: "Sports", q: "भारत ने पहला क्रिकेट वर्ल्ड कप ______ में जीता और दूसरा वनडे वर्ल्ड कप ______ में।", opts: ["1983 / 2011", "1983 / 2007", "1975 / 2011", "1999 / 2015"], a: "1983 / 2011" },
         { cat: "English", q: "Synonym of 'Smart' is ______ and antonym of 'Fast' is ______.", opts: ["Intelligent / Slow", "Clever / Quick", "Dull / Slow", "Brilliant / Run"], a: "Intelligent / Slow" },
-        { cat: "GK", q: "गेटवे ऑफ इंडिया ______ में है और 'इंडिया गेट' ______ शहर में स्थित है।", opts: ["मुंबई / दिल्ली", "दिल्ली / मुंबई", "मुंबई / कोलकाता", "चेन्नई / दिल्ली"], a: "मुंबई / दिल्ली" },
+        { cat: "GK", q: "गेटवे ऑफ इंडिया ______ में है... और 'इंडिया गेट' ______ शहर में स्थित है।", opts: ["मुंबई / दिल्ली", "दिल्ली / मुंबई", "मुंबई / कोलकाता", "चेन्नई / दिल्ली"], a: "मुंबई / दिल्ली" },
         { cat: "Reasoning", q: "रिश्तों में माता के भाई को ______ कहते हैं और पिता के भाई को ______ कहते हैं।", opts: ["मामा / चाचा", "चाचा / मामा", "मौसा / ताऊ", "मामा / फूफा"], a: "मामा / चाचा" },
         { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है और चंद्र ग्रहण ______ के दिन।", opts: ["अमावस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "मंगल / सूर्य", "सूर्य / सीरियस"], a: "अमावस्या / पूर्णिमा" }
     ],
     10: [
         { cat: "Sports", q: "फीफा (FIFA) का संबंध ______ से है और आईसीसी (ICC) का संबंध ______ से है।", opts: ["फुटबॉल / क्रिकेट", "क्रिकेट / फुटबॉल", "टेनिस / हॉकी", "फुटबॉल / टेनिस"], a: "फुटबॉल / क्रिकेट" },
         { cat: "English", q: "Grammar fill: 'He ______ to school' and 'They ______ to school' every day.", opts: ["goes / go", "go / goes", "going / go", "gone / goes"], a: "goes / go" },
-        { cat: "GK", q: "भारत की सबसे लंबी नदी ______ है और सबसे ख्याल चौड़ी नदी ______ है।", opts: ["गंगा / ब्रह्मपुत्र", "यमुना / गंगा", "गोदावरी / सिंधु", "गंगा / नर्मदा"], a: "गंगा / ब्रह्मपुत्र" },
+        { cat: "GK", q: "भारत की सबसे लंबी नदी ______ है और सबसे चौड़ी नदी ______ है।", opts: ["गंगा / ब्रह्मपुत्र", "यमुना / गंगा", "गोदावरी / सिंधु", "गंगा / नर्मदा"], a: "गंगा / ब्रह्मपुत्र" },
         { cat: "Reasoning", q: "यदि रात का उल्टा ______ है, तो सुबह का उल्टा ______ होगा।", opts: ["दिन / शाम", "अंधेरा / उजाला", "दिन / रात", "दोपहर / शाम"], a: "दिन / शाम" },
-        { cat: "Nature", q: "ओजोन परत हमें ______ किरणों से बचाती है और यह ______ मंडल में पाई जाती है।", opts: ["पराबैंगनी / समताप", "इन्फ्रारेड / क्षोभ", "एक्स-रे / आयन", "पराबैंगनी / बाह्य"], a: "पराबैंगनी / समताप" }
+        { cat: "Nature", q: "ओजोन परत हमें ______ किरणों से बचाती है... और यह ______ मंडल में पाई जाती है।", opts: ["पराबैंगनी / समताप", "इन्फ्रारेड / क्षोभ", "एक्स-रे / आयन", "पराबैंगनी / बाह्य"], a: "पराबैंगनी / समताप" }
     ]
 };
 
@@ -85,10 +85,15 @@ const captureArea = document.getElementById('capture-node');
 const expFill = document.getElementById('exp-fill');
 const expText = document.getElementById('exp-text');
 const lvlTag = document.getElementById('lvl-tag');
-const lvlDisplay = document.getElementById('lvl-display');
 const lvlSplash = document.getElementById('lvl-splash');
 const timerContainer = document.getElementById('timer-container');
 const timerFill = document.getElementById('timer-fill');
+
+// Fix: Change skip button text to reflect restart logic
+const skipBtn = document.getElementById('next-quote-btn');
+if (skipBtn) {
+    skipBtn.innerText = "🔄 Restart Quest";
+}
 
 function initPlayerSession() {
     const input = document.getElementById('username-field').value.trim();
@@ -115,8 +120,11 @@ function runArcadeTimer() {
             clearInterval(timerInterval);
             puzzleSolved = true;
             quoteText.style.color = 'var(--game-red)';
-            quoteText.innerText = "💥 TIME EXPIRED! QUEST FAILED!";
+            quoteText.innerText = "💥 TIME EXPIRED! RETRYING...";
             updateXP(5, 'lose'); lockAllOptionsButtons();
+            
+            // Loop Back Feature: Auto reload the same question on timeout
+            setTimeout(() => { loadLevelQuest(); }, 1500);
         }
     }, 1000);
 }
@@ -175,6 +183,7 @@ function evaluateChoice(element, choice, correctValue) {
         createConfetti(element.getBoundingClientRect().left + 40, element.getBoundingClientRect().top);
         updateXP(10, 'gain'); lockAllOptionsButtons();
 
+        // Increment index strictly on CORRECT answers
         setTimeout(() => {
             if (currentQuestIdx < 4) {
                 currentQuestIdx++; loadLevelQuest();
@@ -202,7 +211,10 @@ function evaluateChoice(element, choice, correctValue) {
 
         if (clickAttempts >= 2) {
             clearInterval(timerInterval); puzzleSolved = true;
-            attemptTracker.innerText = "CRITICAL FAIL 💀"; lockAllOptionsButtons();
+            attemptTracker.innerText = "QUEST FAILED! RETRYING... 💀"; lockAllOptionsButtons();
+            
+            // Loop Back Feature: Auto reload the same question on failure
+            setTimeout(() => { loadLevelQuest(); }, 1500);
         }
     }
 }
@@ -231,9 +243,9 @@ function triggerLevelUpBanner() {
     }, 1800);
 }
 
+// Anti-Cheat Change: Skip button now reloads the CURRENT question instead of skipping it
 document.getElementById('next-quote-btn').addEventListener('click', () => {
-    if (currentQuestIdx < 4) { currentQuestIdx++; loadLevelQuest(); } 
-    else if (currentLvl < 10) { currentLvl++; currentQuestIdx = 0; triggerLevelUpBanner(); }
+    loadLevelQuest(); 
 });
 
 document.getElementById('download-btn').addEventListener('click', () => {
