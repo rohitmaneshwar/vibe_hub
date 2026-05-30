@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Rohit's Ultimate Trivia Game! 10 Levels of secure brain challenges with a live leaderboard.">
+    <meta name="description" content="Play Rohit's Ultimate Trivia Game! Secure multi-profile arcade dungeon with PIN recovery.">
     <title>Rohit's Arcade - Trivia Realm</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2 family=Plus+Jakarta+Sans:wght@500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     
     <!-- HTML2CANVAS Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -21,13 +21,42 @@
     <audio id="lofi-player" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
     <div class="level-up-splash" id="lvl-splash">LEVEL UP! ⚡</div>
 
-    <!-- Login Pop window Overlay -->
+    <!-- Multi-Panel Secure Authorization Window Overlay -->
     <div id="login-overlay">
         <div class="login-card">
             <h2>Trivia Dungeon 🎮</h2>
-            <p>अपना नाम डालें (पुराना नाम डालने पर गेम वहीं से शुरू होगा)</p>
-            <input type="text" id="username-field" class="name-input" placeholder="Enter Avatar Name..." maxlength="12">
-            <button class="start-game-btn" onclick="initPlayerSession()">Launch Game</button>
+            
+            <!-- PANEL 1: LOGIN MODE -->
+            <div id="auth-login-panel">
+                <p>अपना Name और Secret PIN डालकर लॉगिन करें</p>
+                <input type="text" id="login-name" class="name-input" placeholder="Avatar Name..." maxlength="12">
+                <input type="password" id="login-pin" class="name-input" placeholder="Secret PIN (e.g. 1234)..." maxlength="6">
+                <button class="start-game-btn" onclick="loginUserSession()">Launch Game</button>
+                <div style="display:flex; justify-content:space-between; margin-top:18px; font-size:0.75rem; font-weight:700;">
+                    <span style="color:var(--game-neon); cursor:pointer;" onclick="switchAuthPanel('register')">🆕 New Profile</span>
+                    <span style="color:#a0aec0; cursor:pointer;" onclick="switchAuthPanel('recover')">❓ Forgot PIN?</span>
+                </div>
+            </div>
+
+            <!-- PANEL 2: REGISTRATION MODE -->
+            <div id="auth-register-panel" style="display:none;">
+                <p>नया Avatar बनाएं और ID Recovery पासवर्ड सेट करें</p>
+                <input type="text" id="reg-name" class="name-input" placeholder="Choose Avatar Name..." maxlength="12">
+                <input type="password" id="reg-pin" class="name-input" placeholder="Set Secret PIN (Max 6 digits)..." maxlength="6">
+                <input type="text" id="reg-hint" class="name-input" placeholder="Security Answer (e.g. your childhood town)...">
+                <button class="start-game-btn" onclick="registerUserSession()">Create Account</button>
+                <p style="margin-top:15px; font-size:0.75rem; color:var(--game-neon); cursor:pointer; font-weight:700;" onclick="switchAuthPanel('login')">⬅️ Back to Login</p>
+            </div>
+
+            <!-- PANEL 3: RECOVERY MODE -->
+            <div id="auth-recover-panel" style="display:none;">
+                <p>PIN रिकवर करने के लिए अपना Security Answer डालें</p>
+                <input type="text" id="rec-name" class="name-input" placeholder="Your Avatar Name..." maxlength="12">
+                <input type="text" id="rec-hint" class="name-input" placeholder="Your Security Answer...">
+                <button class="start-game-btn" onclick="recoverUserPIN()">Verify & Reset PIN</button>
+                <p style="margin-top:18px; font-size:0.75rem; color:var(--game-neon); cursor:pointer; font-weight:700;" onclick="switchAuthPanel('login')">⬅️ Back to Login</p>
+            </div>
+
         </div>
     </div>
 
@@ -36,7 +65,6 @@
         
         <div class="hud-bar">
             <div class="live-status"><div class="pulse-dot"></div><span id="live-greeting">SYS: ONLINE</span></div>
-            <!-- NEW: Switch Account Dynamic Node Control -->
             <button class="switch-profile-btn" onclick="logoutUser()">🔄 Switch Player</button>
             <div class="hud-level-tag" id="lvl-tag">LEVEL 1</div>
         </div>
@@ -55,7 +83,7 @@
 
         <div id="timer-container"><div id="timer-fill"></div></div>
 
-        <!-- Categories Selection Grid Indicators -->
+        <!-- Categories Selection Matrix -->
         <div class="category-matrix">
             <div class="cat-btn" id="cat-sports">⚽<span>Sports</span></div>
             <div class="cat-btn" id="cat-english">🔤<span>English</span></div>

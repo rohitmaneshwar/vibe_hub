@@ -40,13 +40,13 @@ body {
 .name-input {
     width: 100%; background: rgba(0,0,0,0.5); border: 2px solid var(--card-border);
     padding: 16px; border-radius: 16px; color: white; font-size: 1rem; font-weight: 600;
-    outline: none; text-align: center; margin: 20px 0; transition: 0.3s;
+    outline: none; text-align: center; margin: 12px 0 5px 0; transition: 0.3s;
 }
 .name-input:focus { border-color: var(--game-neon); box-shadow: 0 0 15px rgba(168, 85, 247, 0.2); }
 .start-game-btn {
     width: 100%; background: linear-gradient(90deg, #a855f7, #ec4899);
     color: white; border: none; padding: 16px; border-radius: 16px;
-    font-size: 0.95rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;
+    font-size: 0.95rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; margin-top: 10px;
 }
 
 /* --- MAIN INTERACTIVE GAMEBOARD --- */
@@ -61,7 +61,6 @@ body {
 .pulse-dot { width: 8px; height: 8px; background: var(--game-green); border-radius: 50%; box-shadow: 0 0 10px var(--game-green); animation: pulse 1.5s infinite; }
 @keyframes pulse { 0%, 100% { transform: scale(0.9); opacity: 0.6; } 50% { transform: scale(1.1); opacity: 1; } }
 
-/* NEW: Account Switch Button Design */
 .switch-profile-btn {
     background: rgba(255, 255, 255, 0.05); border: 1px solid var(--card-border);
     color: #cbd5e1; padding: 6px 12px; border-radius: 8px; font-size: 0.65rem;
@@ -119,8 +118,6 @@ body {
 .puzzle-opt-btn.correct { background: rgba(34, 197, 94, 0.2) !important; border-color: var(--game-green) !important; color: var(--game-green); }
 .puzzle-opt-btn.wrong { background: rgba(239, 68, 68, 0.2) !important; border-color: var(--game-red) !important; color: var(--game-red); animation: shake 0.3s ease; }
 
-@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
-
 .quote-actions { display: flex; gap: 10px; margin-top: 15px; }
 .action-sub-btn {
     flex: 1; background: rgba(255, 255, 255, 0.02); border: 2px solid var(--card-border);
@@ -153,4 +150,3 @@ body {
 }
 .level-up-splash.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 .confetti { position: absolute; width: 6px; height: 6px; z-index: 1000; border-radius: 50%; animation: poof 0.8s ease-out forwards; }
-@keyframes poof { 0% { transform: translate(0, 0) scale(1); opacity: 1; } 100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; } }
