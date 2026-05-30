@@ -1,0 +1,143 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #020617 0%, #090d16 100%);
+    --game-neon: #a855f7;
+    --game-green: #22c55e;
+    --game-red: #ef4444;
+    --card-bg: rgba(15, 23, 42, 0.7);
+    --card-border: rgba(168, 85, 247, 0.25);
+    --text-main: #f8fafc;
+}
+
+/* SECURE SCREEN & CAPTURE PROTECTION */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none; -webkit-user-select: none;
+}
+
+body {
+    background: var(--bg-gradient); color: var(--text-main);
+    min-height: 100vh; display: flex; justify-content: center; align-items: center;
+    padding: 20px; overflow-x: hidden; position: relative;
+    transition: filter 0.3s ease;
+}
+
+#particle-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+
+/* --- CHARACTER CREATION OVERLAY --- */
+#login-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(2, 6, 23, 0.9); backdrop-filter: blur(20px);
+    display: flex; justify-content: center; align-items: center; z-index: 9999; padding: 20px;
+}
+.login-card {
+    background: rgba(15, 23, 42, 0.85); border: 2px solid var(--game-neon);
+    padding: 35px 25px; border-radius: 28px; width: 100%; max-width: 390px;
+    text-align: center; box-shadow: 0 0 35px rgba(168, 85, 247, 0.3);
+}
+.login-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; margin-bottom: 8px; }
+.name-input {
+    width: 100%; background: rgba(0,0,0,0.5); border: 2px solid var(--card-border);
+    padding: 16px; border-radius: 16px; color: white; font-size: 1rem; font-weight: 600;
+    outline: none; text-align: center; margin: 20px 0; transition: 0.3s;
+}
+.name-input:focus { border-color: var(--game-neon); box-shadow: 0 0 15px rgba(168, 85, 247, 0.2); }
+.start-game-btn {
+    width: 100%; background: linear-gradient(90deg, #a855f7, #ec4899);
+    color: white; border: none; padding: 16px; border-radius: 16px;
+    font-size: 0.95rem; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* --- MAIN INTERACTIVE GAMEBOARD --- */
+.container { width: 100%; max-width: 430px; z-index: 10; display: none; }
+
+/* HUD Header Dashboard Layouts */
+.hud-bar {
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; margin-bottom: 15px; background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--card-border); padding: 12px 15px; border-radius: 16px;
+}
+.live-status { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; font-weight: 700; }
+.pulse-dot { width: 8px; height: 8px; background: var(--game-green); border-radius: 50%; box-shadow: 0 0 10px var(--game-green); animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%, 100% { transform: scale(0.9); opacity: 0.6; } 50% { transform: scale(1.1); opacity: 1; } }
+.hud-level-tag { background: var(--game-neon); color: white; padding: 4px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: 700; }
+
+/* Profile Layout Status Elements */
+.profile-card {
+    background: var(--card-bg); border: 2px solid var(--card-border);
+    border-radius: 24px; padding: 15px 20px; margin-bottom: 15px;
+    display: flex; align-items: center; gap: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.avatar { width: 70px; height: 70px; border-radius: 14px; border: 2px solid var(--game-neon); object-fit: cover; }
+.char-stats { flex-grow: 1; }
+.char-stats h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; }
+
+.stat-bar-container { width: 100%; background: #1e293b; height: 6px; border-radius: 3px; margin-top: 5px; overflow: hidden; }
+.stat-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #a855f7, #ec4899); transition: width 0.3s; }
+
+/* Arcade countdown loading lines bar */
+#timer-container { width: 100%; background: rgba(0,0,0,0.5); height: 6px; border-radius: 3px; margin-bottom: 15px; overflow: hidden; display: none; border: 1px solid rgba(255,255,255,0.05); }
+#timer-fill { height: 100%; width: 100%; background: var(--game-red); }
+
+/* Categories selections bar nodes matrix */
+.category-matrix { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-bottom: 15px; }
+.cat-btn {
+    background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border);
+    border-radius: 12px; padding: 8px 2px; font-size: 1.1rem; text-align: center; opacity: 0.4; pointer-events: none; transition: 0.3s;
+}
+.cat-btn span { display: block; font-size: 0.55rem; font-weight: 700; color: #94a3b8; margin-top: 2px; }
+.cat-btn.active { opacity: 1; background: rgba(168, 85, 247, 0.15); border-color: var(--game-neon); }
+.cat-btn.active span { color: white; }
+
+/* Main Question Layout Panel Widget */
+.widget {
+    background: var(--card-bg); border: 2px solid var(--card-border);
+    border-radius: 24px; padding: 20px; margin-bottom: 15px; position: relative;
+}
+.widget-title { font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; display: flex; justify-content: space-between; }
+.attempt-badge { font-size: 0.7rem; color: #f59e0b; background: rgba(245, 158, 11, 0.1); padding: 2px 8px; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.2); font-weight: bold; }
+
+.quote-capture-area {
+    background: #0f172a; border-radius: 16px; padding: 20px; text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05); min-height: 110px;
+    display: flex; flex-direction: column; justify-content: center;
+}
+.quote-box { color: #f8fafc; font-size: 1rem; font-weight: 700; line-height: 1.6; }
+.quote-box span.blank-space { color: #f59e0b; text-decoration: underline; font-weight: 800; }
+
+/* 4 Arcade Multiple Choice Options Buttons */
+.puzzle-options-box { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 15px; }
+.puzzle-opt-btn {
+    background: rgba(0, 0, 0, 0.4); border: 1px solid var(--card-border);
+    color: white; padding: 14px; border-radius: 14px; font-weight: 700; font-size: 0.85rem;
+    cursor: pointer; text-align: left; padding-left: 15px; display: flex; justify-content: space-between;
+}
+.puzzle-opt-btn.correct { background: rgba(34, 197, 94, 0.2) !important; border-color: var(--game-green) !important; color: var(--game-green); }
+.puzzle-opt-btn.wrong { background: rgba(239, 68, 68, 0.2) !important; border-color: var(--game-red) !important; color: var(--game-red); animation: shake 0.3s ease; }
+
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+
+.quote-actions { display: flex; gap: 10px; margin-top: 15px; }
+.action-sub-btn {
+    flex: 1; background: rgba(255, 255, 255, 0.02); border: 2px solid var(--card-border);
+    color: #cbd5e1; padding: 12px; font-size: 0.75rem; font-weight: 700; border-radius: 14px;
+    cursor: pointer; text-transform: uppercase; display: flex; justify-content: center; align-items: center; gap: 5px;
+}
+
+.ping-btn {
+    width: 100%; background: linear-gradient(90deg, #a855f7, #ec4899); border: none;
+    padding: 16px; border-radius: 16px; color: white; font-weight: 700; font-size: 0.9rem;
+    cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* Level Up overlay graphics splash modules */
+.level-up-splash {
+    position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%) scale(0.5);
+    background: rgba(0, 0, 0, 0.95); border: 3px solid var(--game-green); padding: 25px 45px;
+    border-radius: 20px; color: var(--game-green); font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem; font-weight: 700; text-transform: uppercase; box-shadow: 0 0 50px rgba(34, 197, 94, 0.6); pointer-events: none; z-index: 9999; opacity: 0; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-align: center;
+}
+.level-up-splash.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.confetti { position: absolute; width: 6px; height: 6px; z-index: 1000; border-radius: 50%; animation: poof 0.8s ease-out forwards; }
+@keyframes poof { 0% { transform: translate(0, 0) scale(1); opacity: 1; } 100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; } }
