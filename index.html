@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     
+    <!-- HTML2CANVAS Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
+    <!-- External CSS Styling Link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,19 +21,23 @@
     <audio id="lofi-player" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
     <div class="level-up-splash" id="lvl-splash">LEVEL UP! ⚡</div>
 
+    <!-- Login Pop window Overlay -->
     <div id="login-overlay">
         <div class="login-card">
             <h2>Trivia Dungeon 🎮</h2>
-            <p>अपना नाम डालें और 10 Levels की पहेली को स्टार्ट करें</p>
+            <p>अपना नाम डालें (पुराना नाम डालने पर गेम वहीं से शुरू होगा)</p>
             <input type="text" id="username-field" class="name-input" placeholder="Enter Avatar Name..." maxlength="12">
             <button class="start-game-btn" onclick="initPlayerSession()">Launch Game</button>
         </div>
     </div>
 
+    <!-- Main Game Board UI -->
     <div class="container" id="main-gameboard">
         
         <div class="hud-bar">
             <div class="live-status"><div class="pulse-dot"></div><span id="live-greeting">SYS: ONLINE</span></div>
+            <!-- NEW: Switch Account Dynamic Node Control -->
+            <button class="switch-profile-btn" onclick="logoutUser()">🔄 Switch Player</button>
             <div class="hud-level-tag" id="lvl-tag">LEVEL 1</div>
         </div>
         
@@ -49,6 +55,7 @@
 
         <div id="timer-container"><div id="timer-fill"></div></div>
 
+        <!-- Categories Selection Grid Indicators -->
         <div class="category-matrix">
             <div class="cat-btn" id="cat-sports">⚽<span>Sports</span></div>
             <div class="cat-btn" id="cat-english">🔤<span>English</span></div>
@@ -76,15 +83,16 @@
             </div>
         </div>
 
+        <!-- Dungeon Hall of Fame Leaderboard -->
         <div class="widget leaderboard-widget">
             <div class="widget-title">🏆 Dungeon Hall of Fame</div>
-            <div class="leaderboard-list" id="leaderboard-container">
-                </div>
+            <div class="leaderboard-list" id="leaderboard-container"></div>
         </div>
 
         <button class="ping-btn" id="ping-me">⚡ Claim Realm Reward</button>
     </div>
 
+    <!-- External JavaScript Link -->
     <script src="game.js"></script>
 </body>
 </html>

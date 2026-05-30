@@ -12,19 +12,19 @@ const localPuzzles = {
         { cat: "English", q: "Identify the vowel combo: 'B__autif__l' requires ______ and ______ to complete.", opts: ["e / u", "a / i", "e / i", "o / u"], a: "e / u" },
         { cat: "GK", q: "विश्व का सबसे बड़ा महासागर ______ है और सबसे बड़ा रेगिस्तान ______ है।", opts: ["प्रशांत / सहारा", "हिन्द / थार", "अटलांटिक / गोबी", "प्रशांत / गोबी"], a: "प्रशांत / सहारा" },
         { cat: "Reasoning", q: "Complete the pattern: 2, 4, 8, 16, ______ and 3, 6, 12, 24, ______.", opts: ["32 / 48", "24 / 36", "32 / 36", "64 / 48"], a: "32 / 48" },
-        { cat: "Nature", q: "पेड़ की पत्तियां ______ के कारण हरी होती हैं और वे ______ गैस छोड़ती हैं।", opts: ["क्लोरोफिल / ऑक्सीजन", "नाइट्रोजन / कार्बन", "क्लोरोफिल /  nitrogen", "पानी / ऑक्सीजन"], a: "क्लोरोफिल / ऑक्सीजन" }
+        { cat: "Nature", q: "पेड़ की पत्तियां ______ के कारण हरी होती हैं और वे ______ गैस छोड़ती हैं।", opts: ["क्लोरोफिल / ऑक्सीजन", "नाइट्रोजन / कार्बन", "क्लोरोफिल /  nitrogen", "पानी /  oxygen"], a: "क्लोरोफिल / ऑक्सीजन" }
     ],
     3: [
         { cat: "Sports", q: "हॉकी के जादूगर ______ को कहा जाता है और मिल्खा सिंह को ______ सिंह कहते हैं।", opts: ["मेजर ध्यानचंद /  फ्लाइंग", "सचिन / सुल्तान", "ध्यानचंद / किंग", "नेहरू / आयरन"], a: "मेजर ध्यानचंद /  फ्लाइंग" },
         { cat: "English", q: "Plural of 'Man' is ______ and plural of 'Child' is ______.", opts: ["Men / Children", "Mans / Childs", "Mens / Childrens", "Man / Child"], a: "Men / Children" },
         { cat: "GK", q: "सौरमंडल का सबसे गर्म ग्रह ______ है और 'नीला ग्रह' ______ को कहते हैं।", opts: ["शुक्र /  पृथ्वी", "बुध / मंगल", "मंगल / शुक्र", "बृहस्पति / शनि"], a: "शुक्र /  पृथ्वी" },
-        { cat: "Reasoning", q: "सेब एक ______ है और आलू जमीन के अंदर उगने वाला एक ______ है।", opts: ["फल / तना", "सब्जी / जड़", "फल / फल", "बीज / तना"], a: "फल / तना" },
+        { cat: "Reasoning", q: "सेब एक ______ है और आलू जमीन के अंदर उगने वाला एक ______ है।", opts: ["फल / तना", "Sabczi / जड़", "फल / फल", "बीज / तna"], a: "फल / तना" },
         { cat: "Nature", q: "शुद्ध पानी का रासायनिक सूत्र ______ है और साधारण नमक का ______ है।", opts: ["H2O / NaCl", "CO2 / HCl", "H2O / NaOH", "O2 / KOH"], a: "H2O / NaCl" }
     ],
     4: [
         { cat: "Sports", q: "आईपीएल (IPL) की शुरुआत ______ में हुई थी और पहला सीजन ______ ने जीता था।", opts: ["2008 / राजस्थान रॉयल्स", "2007 / मुंबई इंडियंस", "2009 / चेन्नई सुपर किंग्स", "2008 / डेक्कन चार्जर्स"], a: "2008 / राजस्थान रॉयल्स" },
         { cat: "English", q: "Past form of 'Eat' is ______ and its third form is ______.", opts: ["ate / eaten", "eated / eaten", "ate / eated", "eating / eats"], a: "ate / eaten" },
-        { cat: "GK", q: "भारत के प्रथम प्रधानमंत्री ______ थे और प्रथम राष्ट्रपति ______ थे।", opts: ["जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद", "महात्मा गांधी / जवाहरलाल नेहरू", "सरदार पटेल / डॉ. कलाम", "शास्त्री / डॉ. राजेंद्र प्रसाद"], a: "जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद" },
+        { cat: "GK", q: "भारत के प्रथम प्रधानमंत्री ______ थे और प्रथम राष्ट्रपति ______ थे।", opts: ["जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद", "महात्मा गांधी / नेहरू", "सरदार पटेल / डॉ. कलाम", "शास्त्री / डॉ. राजेंद्र प्रसाद"], a: "जवाहरलाल नेहरू / डॉ. राजेंद्र प्रसाद" },
         { cat: "Reasoning", q: "यदि पैर का संबंध ______ से है, तो हाथ का संबंध ______ से होगा।", opts: ["जूते / दस्ताने", "मोज़े / घड़ी", "चप्पल / अंगूठी", "रास्ते / काम"], a: "जूते / दस्ताने" },
         { cat: "Nature", q: "ताजमहल ______ नदी के किनारे है और दिल्ली का लाल किला ______ के किनारे है।", opts: ["यमुना /  यमुना", "गंगा /  यमुना", "नर्मदा / ताप्ती", "यमुना / गंगा"], a: "यमुना /  यमुना" }
     ],
@@ -32,7 +32,7 @@ const localPuzzles = {
         { cat: "Sports", q: "मैराथन दौड़ की कुल दूरी लगभग ______ किमी होती है और हाफ मैराथन ______ किमी।", opts: ["42 / 21", "50 / 25", "42 / 10", "30 / 15"], a: "42 / 21" },
         { cat: "English", q: "Form of 'Write': second form is ______ and third form is ______.", opts: ["wrote / written", "written / wrote", "write / wrote", "writing / writes"], a: "wrote / written" },
         { cat: "GK", q: "भारत की 'पिंक सिटी' ______ को कहा जाता है और 'झीलों की नगरी' ______ है।", opts: ["जयपुर / उदयपुर", "जोधपुर / जयपुर", "जयपुर / भोपाल", "इंदौर / उदयपुर"], a: "जयपुर / उदयपुर" },
-        { cat: "Reasoning", q: "यदि कार का संबंध ______ से है, तो हवाई जहाज का संबंध ______ से है।", opts: ["रोड / आसमान", "पेट्रोल / पायलट", "पहिए / पंख", "ड्राइवर / रनवे"], a: "रोड / आसमान" },
+        { cat: "Reasoning", q: "यदि कार का संबंध ______ से है, तो हवाई जहाज का संबंध ______ से है।", opts: ["रोड / आसमान", "पेट्रोल / पायलट", "पहie / पंख", "ड्राइवर / रनवे"], a: "रोड / आसमान" },
         { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है और चंद्र ग्रहण ______ के दिन।", opts: ["अमावस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "रविवार / सोमवार", "अमावस्या / अमावस्या"], a: "अमावस्या / पूर्णिमा" }
     ],
     6: [
@@ -45,12 +45,12 @@ const localPuzzles = {
     7: [
         { cat: "Sports", q: "सानिया मिर्जा ______ खेल से जुड़ी हैं और साइना नेहवाल ______ से।", opts: ["टेनिस / बैडमिंटन", "बैडमिंटन / टेनिस", "टेनिस / क्रिकेट", "कुश्ती / बैडमिंटन"], a: "टेनिस / बैडमिंटन" },
         { cat: "English", q: "Synonym of 'Rich' is ______ and its antonym is ______.", opts: ["Wealthy / Poor", "Poor / Wealthy", "Money / Hard", "Happy / Sad"], a: "Wealthy / Poor" },
-        { cat: "GK", q: "कागज़ का आविष्कार सबसे पहले ______ में हुआ और शून्य (0) का आविष्कार ______ में हुआ।", opts: ["चीन / भारत", "भारत /  china", "अमेरिका / भारत", "मिस्र / यूनान"], a: "चीन / भारत" },
+        { cat: "GK", q: "कागज़ का आविष्कार सबसे पहले ______ में हुआ और शून्य (0) का आविष्कार ______ में हुआ।", opts: ["चीन / भारत", "भारत / चीन", "अमेरिका / भारत", "मिस्र / यूनान"], a: "चीन / भारत" },
         { cat: "Reasoning", q: "गणित में 5 का वर्ग (Square) ______ है और 10 का वर्ग ______ होता है।", opts: ["25 / 100", "20 / 40", "25 / 50", "15 / 100"], a: "25 / 100" },
         { cat: "Nature", q: "रेगिस्तान का जहाज़ ______ को कहते हैं और जंगल का राजा ______ है।", opts: ["ऊँट / शेर", "घोड़ा / चीता", "ऊँट / बाघ", "हाथी / शेर"], a: "ऊँट / शेर" }
     ],
     8: [
-        { cat: "Sports", q: "नीरज चोपड़ा ______ खेल से जुड़े हैं और अभिनव बिंद्रा ______ से।", opts: ["भाला फेंक / शूटिंग", "शूटिंग / भाला फेंक", "दौड़ / कुश्ती", "भाला फेंक / बॉक्सिंग"], a: "भाला फेंक / शूटिंग" },
+        { cat: "Sports", q: "नीरज चोपड़ा ______ खेल से जुड़े हैं और अभिनv बिंद्रा ______ से।", opts: ["भाला फेंक / शूटिंग", "शूटिंग / भाला फेंक", "दौड़ / कुश्ती", "भाला फेंक / बॉक्सिंग"], a: "भाला फेंक / शूटिंग" },
         { cat: "English", q: "Plural of 'Box' is ______ and plural of 'Ox' is ______.", opts: ["Boxes / Oxen", "Boxs / Oxes", "Boxes / Oxes", "Boxed / Oxen"], a: "Boxes / Oxen" },
         { cat: "GK", q: "कंप्यूटर का जनक ______ को कहा जाता है और दिमाग ______ को कहते हैं।", opts: ["चार्ल्स बैबेज / CPU", "न्यूटन / RAM", "पास्कल / हार्डडिस्क", "एडिसन / CPU"], a: "चार्ल्स बैबेज / CPU" },
         { cat: "Reasoning", q: "जनवरी के ठीक बाद ______ आता है और अक्टूबर के ठीक पहले ______ आता है।", opts: ["फरवरी / सितंबर", "मार्च / नवंबर", "फरवरी / अगस्त", "दिसंबर / नवंबर"], a: "फरवरी / सितंबर" },
@@ -61,7 +61,7 @@ const localPuzzles = {
         { cat: "English", q: "Synonym of 'Smart' is ______ and antonym of 'Fast' is ______.", opts: ["Intelligent / Slow", "Clever / Quick", "Dull / Slow", "Brilliant / Run"], a: "Intelligent / Slow" },
         { cat: "GK", q: "गेटवे ऑफ इंडिया ______ में है और 'इंडिया गेट' ______ शहर में स्थित है।", opts: ["मुंबई / दिल्ली", "दिल्ली / मुंबई", "मुंबई / कोलकाता", "चेन्नई / दिल्ली"], a: "मुंबई / दिल्ली" },
         { cat: "Reasoning", q: "रिश्तों में माता के भाई को ______ कहते हैं और पिता के भाई को ______ कहते हैं।", opts: ["मामा / चाचा", "चाचा / मामा", "मौसा / ताऊ", "मामा / फूफा"], a: "मामा / चाचा" },
-        { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है और चंद्र ग्रहण ______ के दिन।", opts: ["अмаваस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "मंगल / सूर्य", "सूर्य / सीरियस"], a: "अमावस्या / पूर्णिमा" }
+        { cat: "Nature", q: "सूर्य ग्रहण हमेशा ______ के दिन होता है और चंद्र ग्रहण ______ के दिन।", opts: ["अमावस्या / पूर्णिमा", "पूर्णिमा / अमावस्या", "मंगल / सूर्य", "सूर्य / सीरियस"], a: "अमावस्या / पूर्णिमा" }
     ],
     10: [
         { cat: "Sports", q: "फीफा (FIFA) का संबंध ______ से है और आईसीसी (ICC) का संबंध ______ से है।", opts: ["फुटबॉल / क्रिकेट", "क्रिकेट / फुटबॉल", "टेनिस / हॉकी", "फुटबॉल / टेनिस"], a: "फुटबॉल / क्रिकेट" },
@@ -74,7 +74,8 @@ const localPuzzles = {
 
 const categories = ["Sports", "English", "GK", "Reasoning", "Nature"];
 
-let currentLvl = 1; let currentQuestIdx = 0; 
+// FIX: Track XP explicitly inside active global runtime variable
+let currentLvl = 1; let currentQuestIdx = 0; let currentXP = 0;
 let clickAttempts = 0; let puzzleSolved = false;
 let pName = "Player 1"; let timerInterval = null; let ticksLeft = 15;
 
@@ -90,85 +91,98 @@ const timerContainer = document.getElementById('timer-container');
 const timerFill = document.getElementById('timer-fill');
 const lbContainer = document.getElementById('leaderboard-container');
 
-// --- FEATURE 2: NATIVE RETRO ARCADE AUDIO CONSOLE ---
+// AUDIO MODULE
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 function playArcadeSound(type) {
     try {
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
+        const osc = audioCtx.createOscillator(); const gain = audioCtx.createGain();
         osc.connect(gain); gain.connect(audioCtx.destination);
-        
         if (type === 'correct') {
-            osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
-            osc.frequency.setValueAtTime(880, audioCtx.currentTime + 0.08); // A5
-            gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+            osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+            osc.frequency.setValueAtTime(880, audioCtx.currentTime + 0.08);
+            gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.2);
             osc.start(); osc.stop(audioCtx.currentTime + 0.2);
         } else if (type === 'wrong') {
-            osc.type = 'sawtooth';
-            osc.frequency.setValueAtTime(120, audioCtx.currentTime);
+            osc.type = 'sawtooth'; osc.frequency.setValueAtTime(120, audioCtx.currentTime);
             osc.frequency.linearRampToValueAtTime(60, audioCtx.currentTime + 0.25);
-            gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+            gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.25);
             osc.start(); osc.stop(audioCtx.currentTime + 0.25);
         } else if (type === 'lvlup') {
-            osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5
-            osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.1); // E5
-            osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.2); // G5
-            osc.frequency.exponentialRampToValueAtTime(1046.50, audioCtx.currentTime + 0.4); // C6
-            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
-            osc.start(); osc.stop(audioCtx.currentTime + 0.4);
+            osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+            osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.15);
+            gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.3);
+            osc.start(); osc.stop(audioCtx.currentTime + 0.3);
         }
-    } catch (e) { console.log('Audio Context muted init context.'); }
+    } catch (e) {}
 }
 
-// --- FEATURE 1: PROGRESS SAVE SYSTEM (LOCALSTORAGE) ---
+// FIX: UPGRADED TO MULTI-USER SEPARATE MEMORY SAVE CORES
 function loadSavedGameProgress() {
-    const savedState = localStorage.getItem('rohit_trivia_state');
-    if (savedState) {
-        const state = JSON.parse(savedState);
-        pName = state.pName;
+    const currentUser = localStorage.getItem('rohit_current_user');
+    let users = JSON.parse(localStorage.getItem('rohit_trivia_users')) || {};
+    
+    if (currentUser && users[currentUser.toLowerCase()]) {
+        const state = users[currentUser.toLowerCase()];
+        pName = state.name;
         currentLvl = state.currentLvl;
         currentQuestIdx = state.currentQuestIdx;
+        currentXP = state.currentXP || 0;
+        
         document.getElementById('player-display-name').innerText = pName;
         document.getElementById('login-overlay').style.display = 'none';
         document.getElementById('main-gameboard').style.display = 'block';
+        
+        // Sync fixed runtime XP metrics instantly
+        expFill.style.width = `${currentXP}%`;
+        expText.innerText = `${currentXP}/100 XP`;
+        
         resizeCanvas();
         loadLevelQuest();
+    } else {
+        document.getElementById('login-overlay').style.display = 'flex';
+        document.getElementById('main-gameboard').style.display = 'none';
     }
     renderLeaderboard();
 }
 
 function saveGameProgress() {
-    const state = { pName, currentLvl, currentQuestIdx };
-    localStorage.setItem('rohit_trivia_state', JSON.stringify(state));
+    let users = JSON.parse(localStorage.getItem('rohit_trivia_users')) || {};
+    users[pName.toLowerCase()] = { 
+        name: pName, currentLvl, currentQuestIdx, currentXP 
+    };
+    localStorage.setItem('rohit_trivia_users', JSON.stringify(users));
+    localStorage.setItem('rohit_current_user', pName);
     updateLeaderboardScores();
 }
 
-// --- FEATURE 4: LOCAL HALL OF FAME LEADERBOARD ---
+// LOGOUT / SWITCH USER CONTROLLER
+function logoutUser() {
+    localStorage.removeItem('rohit_current_user');
+    clearInterval(timerInterval);
+    document.getElementById('username-field').value = '';
+    document.getElementById('login-overlay').style.display = 'flex';
+    document.getElementById('main-gameboard').style.display = 'none';
+    renderLeaderboard();
+}
+
 function updateLeaderboardScores() {
-    let lb = JSON.parse(localStorage.getItem('rohit_trivia_lb')) || [];
-    let playerFound = lb.find(p => p.name.toLowerCase() === pName.toLowerCase());
-    
-    if (playerFound) {
-        if (currentLvl > playerFound.lvl || (currentLvl === playerFound.lvl && currentQuestIdx > playerFound.quest)) {
-            playerFound.lvl = currentLvl;
-            playerFound.quest = currentQuestIdx;
-        }
-    } else {
-        lb.push({ name: pName, lvl: currentLvl, quest: currentQuestIdx });
+    let users = JSON.parse(localStorage.getItem('rohit_trivia_users')) || {};
+    let lb = [];
+    for (let key in users) {
+        lb.push({ name: users[key].name, lvl: users[key].currentLvl, quest: users[key].currentQuestIdx });
     }
-    
     lb.sort((a, b) => (b.lvl * 10 + b.quest) - (a.lvl * 10 + a.quest));
-    lb = lb.slice(0, 5); // Capture Top 5
+    lb = lb.slice(0, 5);
     localStorage.setItem('rohit_trivia_lb', JSON.stringify(lb));
     renderLeaderboard();
 }
 
 function renderLeaderboard() {
     let lb = JSON.parse(localStorage.getItem('rohit_trivia_lb')) || [];
-    lbContainer.innerHTML = lb.length === 0 ? '<div class="lb-row" style="justify-content:center;opacity:0.5;">No Champions registered yet</div>' : '';
+    lbContainer.innerHTML = lb.length === 0 ? '<div class="lb-row" style="justify-content:center;opacity:0.5;">No Champions yet</div>' : '';
     lb.forEach((player, index) => {
         lbContainer.innerHTML += `
             <div class="lb-row">
@@ -178,16 +192,31 @@ function renderLeaderboard() {
     });
 }
 
-// Check for existing user on runtime initiation
 window.addEventListener('DOMContentLoaded', loadSavedGameProgress);
 
 function initPlayerSession() {
     const input = document.getElementById('username-field').value.trim();
     if (!input) { alert("कृपया एक सुंदर सा name दर्ज करें!"); return; }
     pName = input;
+    
+    let users = JSON.parse(localStorage.getItem('rohit_trivia_users')) || {};
+    // Switch or create profile route maps safely
+    if (users[pName.toLowerCase()]) {
+        const state = users[pName.toLowerCase()];
+        currentLvl = state.currentLvl;
+        currentQuestIdx = state.currentQuestIdx;
+        currentXP = state.currentXP || 0;
+    } else {
+        currentLvl = 1; currentQuestIdx = 0; currentXP = 0;
+    }
+    
     document.getElementById('player-display-name').innerText = pName;
     document.getElementById('login-overlay').style.display = 'none';
     document.getElementById('main-gameboard').style.display = 'block';
+    
+    expFill.style.width = `${currentXP}%`;
+    expText.innerText = `${currentXP}/100 XP`;
+    
     resizeCanvas();
     saveGameProgress();
     loadLevelQuest();
@@ -196,7 +225,6 @@ function initPlayerSession() {
 function runArcadeTimer() {
     clearInterval(timerInterval);
     if (currentLvl === 1) { timerContainer.style.display = 'none'; return; }
-    
     timerContainer.style.display = 'block';
     ticksLeft = 15; timerFill.style.width = '100%';
 
@@ -204,47 +232,39 @@ function runArcadeTimer() {
         ticksLeft--;
         timerFill.style.width = `${(ticksLeft / 15) * 100}%`;
         if (ticksLeft <= 0) {
-            clearInterval(timerInterval);
-            puzzleSolved = true;
-            playArcadeSound('wrong');
-            quoteText.style.color = 'var(--game-red)';
+            clearInterval(timerInterval); puzzleSolved = true;
+            playArcadeSound('wrong'); quoteText.style.color = 'var(--game-red)';
             quoteText.innerText = "💥 TIME EXPIRED! RETRYING...";
             updateXP(5, 'lose'); lockAllOptionsButtons();
+            saveGameProgress();
             setTimeout(() => { loadLevelQuest(); }, 1500);
         }
     }, 1000);
 }
 
-// --- FEATURE 3: TYPEWRITER INTERACTIVE PRINT EFFECT ---
+// TYPEWRITER ENGINE LAYER
 function typeWriteQuestion(fullText, qData) {
     let plainText = fullText.replace(/______/g, "______");
-    quoteText.innerHTML = "";
-    optionsContainer.innerHTML = ""; // Clear actions temporarily
+    quoteText.innerHTML = ""; optionsContainer.innerHTML = "";
     
-    let i = 0;
-    clearInterval(window.typewriterTimer);
+    let i = 0; clearInterval(window.typewriterTimer);
     window.typewriterTimer = setInterval(() => {
         if (i < plainText.length) {
-            quoteText.innerHTML += plainText.charAt(i);
-            i++;
+            quoteText.innerHTML += plainText.charAt(i); i++;
         } else {
             clearInterval(window.typewriterTimer);
-            // Formulate standard blanks spans transformations
             let htmlString = fullText.replace("______", `<span class="blank-space">______</span>`);
             htmlString = htmlString.replace("______", `<span class="blank-space">______</span>`);
             quoteText.innerHTML = htmlString;
-            
-            // Build buttons options securely after text streams close
             renderOptionButtonsGrid(qData);
         }
-    }, 15);
+    }, 12);
 }
 
 function loadLevelQuest() {
     clearInterval(timerInterval);
     puzzleSolved = false; clickAttempts = 0;
-    quoteText.style.color = '#f8fafc';
-    attemptTracker.innerText = "Lifelines: 2";
+    quoteText.style.color = '#f8fafc'; attemptTracker.innerText = "Lifelines: 2";
     
     const activeCat = categories[currentQuestIdx];
     document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
@@ -254,8 +274,6 @@ function loadLevelQuest() {
     lvlTag.innerText = `LEVEL ${currentLvl}`;
 
     const qData = localPuzzles[currentLvl][currentQuestIdx];
-    
-    // Trigger typewriter display stream layer animation
     typeWriteQuestion(qData.q, qData);
 }
 
@@ -266,10 +284,8 @@ function renderOptionButtonsGrid(qData) {
     } else {
         timerContainer.style.display = 'none';
     }
-
     rawOptions.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.classList.add('puzzle-opt-btn');
+        const btn = document.createElement('button'); btn.classList.add('puzzle-opt-btn');
         btn.innerHTML = `<span>🎮 ${opt}</span>`;
         btn.addEventListener('click', () => evaluateChoice(btn, opt, qData.a));
         optionsContainer.appendChild(btn);
@@ -282,10 +298,8 @@ function evaluateChoice(element, choice, correctValue) {
     attemptTracker.innerText = `Lifelines: ${2 - clickAttempts}`;
 
     if (choice === correctValue) {
-        clearInterval(timerInterval);
-        puzzleSolved = true;
-        playArcadeSound('correct');
-        element.classList.add('correct');
+        clearInterval(timerInterval); puzzleSolved = true;
+        playArcadeSound('correct'); element.classList.add('correct');
         element.innerHTML += ` <span>✅ +10 XP</span>`;
 
         const words = correctValue.split(' / ');
@@ -304,7 +318,7 @@ function evaluateChoice(element, choice, correctValue) {
                 if (currentLvl < 10) {
                     currentLvl++; currentQuestIdx = 0; triggerLevelUpBanner();
                 } else {
-                    lvlSplash.innerHTML = `🏆 GRAND CHAMPION! 🏆<br><span style="font-size:1rem;color:#f8fafc">Congrats ${pName}, you conquered all 10 levels!</span>`;
+                    lvlSplash.innerHTML = `🏆 GRAND CHAMPION! 🏆<br><span style="font-size:1rem;color:#f8fafc">Congrats ${pName}! All 10 tiers cleared!</span>`;
                     lvlSplash.style.borderColor = "var(--game-green)"; lvlSplash.style.color = "var(--game-green)";
                     lvlSplash.classList.add('show');
                 }
@@ -313,9 +327,8 @@ function evaluateChoice(element, choice, correctValue) {
         }, 1500);
 
     } else {
-        element.classList.add('wrong'); 
-        playArcadeSound('wrong');
-        updateXP(5, 'lose');
+        element.classList.add('wrong'); playArcadeSound('wrong');
+        updateXP(5, 'lose'); saveGameProgress();
 
         if (currentLvl > 1 && clickAttempts < 2) {
             setTimeout(() => {
@@ -323,7 +336,6 @@ function evaluateChoice(element, choice, correctValue) {
                 optionsContainer.innerHTML = ''; btns.forEach(b => optionsContainer.appendChild(b));
             }, 400);
         }
-
         if (clickAttempts >= 2) {
             clearInterval(timerInterval); puzzleSolved = true;
             attemptTracker.innerText = "QUEST FAILED! RETRYING... 💀"; lockAllOptionsButtons();
@@ -336,30 +348,26 @@ function lockAllOptionsButtons() {
     Array.from(optionsContainer.children).forEach(btn => btn.style.pointerEvents = 'none');
 }
 
+// FIXED LOGIC: Manipulate mathematical variable instead of reading layout widths
 function updateXP(amount, direction) {
-    let fillPercent = parseInt(expFill.style.width) || 0;
-    if (direction === 'gain') fillPercent = Math.min(100, fillPercent + amount);
-    else fillPercent = Math.max(0, fillPercent - amount);
-    
-    if (fillPercent >= 100) fillPercent = 0; 
-    expFill.style.width = `${fillPercent}%`;
-    expText.innerText = `${fillPercent}/100 XP`;
+    if (direction === 'gain') {
+        currentXP = Math.min(100, currentXP + amount);
+    } else {
+        currentXP = Math.max(0, currentXP - amount);
+    }
+    expFill.style.width = `${currentXP}%`;
+    expText.innerText = `${currentXP}/100 XP`;
 }
 
 function triggerLevelUpBanner() {
     playArcadeSound('lvlup');
-    expFill.style.width = "0%"; expText.innerText = "0/100 XP";
-    lvlSplash.innerText = `LEVEL UP! LEVEL ${currentLvl} ⚡`;
-    lvlSplash.classList.add('show');
+    currentXP = 0; expFill.style.width = "0%"; expText.innerText = "0/100 XP";
+    lvlSplash.innerText = `LEVEL UP! LEVEL ${currentLvl} ⚡`; lvlSplash.classList.add('show');
     createConfetti(window.innerWidth/2, window.innerHeight/2);
-    setTimeout(() => {
-        lvlSplash.classList.remove('show'); loadLevelQuest();
-    }, 1800);
+    setTimeout(() => { lvlSplash.classList.remove('show'); loadLevelQuest(); }, 1800);
 }
 
-document.getElementById('next-quote-btn').addEventListener('click', () => {
-    loadLevelQuest(); 
-});
+document.getElementById('next-quote-btn').addEventListener('click', () => { loadLevelQuest(); });
 
 document.getElementById('download-btn').addEventListener('click', () => {
     if (!puzzleSolved) { alert("🔒 पहेली हल करने के बाद ही कार्ड का स्क्रीनशॉट सेव कर सकते हैं!"); return; }
@@ -370,7 +378,7 @@ document.getElementById('download-btn').addEventListener('click', () => {
     });
 });
 
-// Particles Flow setup
+// Particles Flow
 const canvas = document.getElementById('particle-canvas'); const ctx = canvas.getContext('2d'); let particles = [];
 function resizeCanvas() { if(canvas) { canvas.width = window.innerWidth; canvas.height = window.innerHeight; } }
 window.addEventListener('resize', resizeCanvas);
@@ -381,17 +389,14 @@ class Particle {
 }
 function handleMove(e) { const x = e.touches ? e.touches[0].clientX : e.clientX; const y = e.touches ? e.touches[0].clientY : e.clientY; particles.push(new Particle(x, y)); }
 window.addEventListener('mousemove', handleMove); window.addEventListener('touchmove', handleMove);
-
 function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = particles.length - 1; i >= 0; i--) {
-        particles[i].update(); particles[i].draw();
-        if (particles[i].alpha <= 0) particles.splice(i, 1);
+        particles[i].update(); particles[i].draw(); if (particles[i].alpha <= 0) particles.splice(i, 1);
     }
     requestAnimationFrame(animateParticles);
 }
 animateParticles();
-
 function createConfetti(x, y) {
     const colors = ['#a855f7', '#ec4899', '#22c55e', '#3b82f6'];
     for(let i=0; i<25; i++) {
